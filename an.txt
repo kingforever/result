@@ -1,0 +1,16 @@
+时间戳
+ let Time = +new Date('2020-09-01 00:00:00'); //用户输入的时间毫秒数(未来时间毫秒数)
+        console.log(Time)
+
+数组去重
+ let newArr = fn(arr);
+
+        function fn(arr){
+            let newArr = [];
+            for(let i=0;i<arr.length;i++){
+                if(newArr.indexOf(arr[i]) == -1){
+                    newArr.push(arr[i])
+                }
+            }
+            return newArr
+        }
